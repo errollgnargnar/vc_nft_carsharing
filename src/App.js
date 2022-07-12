@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import { Outlet } from "react-router-dom";
+
+import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container';
+import Nav from "react-bootstrap/Nav";
+import Navbar from 'react-bootstrap/Navbar'
+
 import './App.css';
 
-function App() {
+function App({connectToWallet}) {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="navheader" style={{display:"flex", justifyContent:"space-around", alignItems:"center",   borderBottom: "1px solid"}}>
+        <div>
+          <Navbar bg="#38252a" variant="dark">
+            <Container>
+            <Navbar.Brand href="#home"><img src="https://velocita.club/images/gradient-logo.png"/></Navbar.Brand>
+            </Container>
+          </Navbar>
+        </div>
+        <div>
+          <Navbar bg="#38252a" variant="dark">
+            <Container >
+            <Nav className="me-auto" style={{float:"right"}}>
+              <Nav.Link href="/">About</Nav.Link>
+              <Nav.Link href="/cars">Cars</Nav.Link>
+                <Button variant="primary" >
+                  Connect to wallet
+                </Button>
+            </Nav>
+            </Container>
+          </Navbar>
+        </div>
+      </div>
+      <Outlet />
     </div>
   );
 }
