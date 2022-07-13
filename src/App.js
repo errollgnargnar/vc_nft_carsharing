@@ -23,8 +23,8 @@ function App({connectToWallet}) {
           <Navbar bg="#38252a" variant="dark">
             <Container >
             <Nav className="me-auto" style={{float:"right"}}>
-              <Nav.Link href="/vc-nft-carshare-frontend/">About</Nav.Link>
-              <Nav.Link href="/vc-nft-carshare-frontend/cars">Cars</Nav.Link>
+              <Nav.Link href="/">About</Nav.Link>
+              <Nav.Link href="/cars">Cars</Nav.Link>
                 <Button variant="primary" >
                   Connect to wallet
                 </Button>
