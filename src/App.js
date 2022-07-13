@@ -38,4 +38,4 @@ function App({connectToWallet}) {
   );
 }
 
-export default App;
+export default App; 
