@@ -1,6 +1,6 @@
 {
   "name": "carsharing_frontend",
-  "homepage": "https://errollgnargnar.github.io/vc-nft-carshare-frontend/",
+  "homepage": "./vc-nft-carshare-frontend/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
