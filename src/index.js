@@ -33,9 +33,7 @@ root.render(
           />
           <Route path=":carId" element={<Car />} />
         </Route>
-
-      </Route>
-      <Route
+        <Route
           path="*"
           element={
             <main style={{ padding: "1rem" }}>
@@ -43,6 +41,9 @@ root.render(
             </main>
           }
         />
+
+      </Route>
+
     </Routes>
   </BrowserRouter>
 );
