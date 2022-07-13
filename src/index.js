@@ -33,14 +33,14 @@ root.render(
           />
           <Route path=":carId" element={<Car />} />
         </Route>
-        {/* <Route
+        <Route
           path="*"
           element={
             <main style={{ padding: "1rem" }}>
               <p>There's nothing here!</p>
             </main>
           }
-        /> */}
+        />
       </Route>
 
     </Routes>
