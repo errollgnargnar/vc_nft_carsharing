@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-
+ 
 export default function SeasonCard({season}) {
     return (
         <Card style={{ width: '18rem' }} bg="dark">
