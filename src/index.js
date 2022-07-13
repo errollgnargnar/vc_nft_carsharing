@@ -21,8 +21,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/" element={<About />} />
-        <Route path="/cars" element={<Cars />} >
+        <Route path="/vc-nft-carshare-frontend/" element={<About />} />
+        <Route path="/vc-nft-carshare-frontend/cars" element={<Cars />} >
             <Route
             index
             element={
